@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Trabalho</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Cadastro</h1>
+
+    <!-- Formulário de Cadastro de Usuário -->
+    <h2>Cadastro de Usuário</h2>
+    <form id="cadastroUsuarioForm">
+      <label for="nomeUsuario">Nome de Usuário:</label>
+      <input type="text" id="nomeUsuario" required>
+      
+      <label for="emailUsuario">E-mail:</label>
+      <input type="email" id="emailUsuario" required>
+      
+      <label for="senhaUsuario">Senha:</label>
+      <input type="password" id="senhaUsuario" required>
+      
+      <button type="button" onclick="cadastrarUsuario()">Cadastrar Usuário</button>
+    </form>
+
+    <!-- Formulário de Cadastro de Produto -->
+    <h2>Cadastro de Produto</h2>
+    <form id="cadastroProdutoForm">
+      <label for="nomeProduto">Nome do Produto:</label>
+      <input type="text" id="nomeProduto" required>
+      
+      <label for="precoProduto">Preço do Produto:</label>
+      <input type="number" id="precoProduto" required>
+      
+      <button type="button" onclick="cadastrarProduto()">Cadastrar Produto</button>
+    </form>
+
+    <!-- Formulário de Login -->
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="emailLogin">E-mail:</label>
+      <input type="email" id="emailLogin" required>
+      
+      <label for="senhaLogin">Senha:</label>
+      <input type="password" id="senhaLogin" required>
+      
+      <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <!-- Botão de Logout -->
+    <button onclick="logout()">Logout</button>
+
+    <!-- Formulário de Atualização de Cadastro -->
+    <h2>Atualização de Cadastro</h2>
+    <form id="atualizarCadastroForm">
+      <label for="nomeAtualizado">Novo Nome:</label>
+      <input type="text" id="nomeAtualizado">
+      
+      <label for="emailAtualizado">Novo E-mail:</label>
+      <input type="email" id="emailAtualizado">
+      
+      <label for="senhaAtualizada">Nova Senha:</label>
+      <input type="password" id="senhaAtualizada">
+      
+      <button type="button" onclick="atualizarCadastro()">Atualizar Cadastro</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
