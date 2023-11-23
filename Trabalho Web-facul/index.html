@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Produtos/Transações</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Produtos/Transações</h1>
+    <ul id="productList"></ul>
+    <button onclick="openAddProductModal()">Adicionar Produto/Transação</button>
+  </div>
+
+  <!-- Para adicionar/editar produto -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Adicionar/Editar Produto/Transação</h2>
+      <form id="productForm">
+        <label for="productName">Nome do Produto:</label>
+        <input type="text" id="productName" required>
+
+        <label for="productPrice">Preço:</label>
+        <input type="number" id="productPrice" required>
+
+        <button type="button" onclick="saveProduct()">Salvar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
